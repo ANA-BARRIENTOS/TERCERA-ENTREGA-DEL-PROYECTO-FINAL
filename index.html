@@ -1,0 +1,259 @@
+<!DOCTYPE html>1
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description"
+        content="Propiedades en Corrientes ☆ Casas y departamentos en VENTA / ALQUILER ☆ La casa de tus sueños esta en B Propiedades, líder en servicios inmobiliarios de la región.">
+    <meta name="keywords"
+        content="inmobiliaria, alquiler, renta, compra, venta, propiedad, propiedades, departamento, casa, deptos, Corrientes, Argentina">
+    <title>B PROPIEDADES - Inmobiliaria</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Open HEADER -->
+    <header id="header">
+        <div></div>
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo" id="logo">
+        </a>
+    </header>
+    <!-- End HEADER -->
+
+    <!-- Open NAV BAR -->
+    <div class="navegacion">
+        <label for="menu" class="menu__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="nav">
+            <ul>
+                <label for="menu" class="menu__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <li><a id="inicio_html" href="index.html">INICIO</a></li>
+                <li><a href="html/propiedades2.html">PROPIEDADES</a></li>
+                <li><a class="vender_a" href="html/vender3.html">VENDER</a></li>
+                <li><a href="html/nosotros4.html">NOSOTROS</a></li>
+                <li><a href="html/contacto5.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End NAV BAR -->
+
+    <!-- Open MAIN CONTAINER -->
+    <section class="home_heroImage">
+        <fieldset class="fieldset">
+            <!-- <legend>Buscar Propiedades</legend> -->
+            <form action="/formulario" method="POST">
+                <div class="radio-buttons">
+                    <input type="radio" name="rentorbuy" id="RENT">
+                    <label for="RENT" id="radio1" class="btn">Alquilar</label>
+
+                    <input type="radio" name="rentorbuy" id="BUY">
+                    <label for="BUY" id="radio2" class="btn">Comprar</label>
+                </div>
+
+                <div class="buttons_container">
+                    <input type="text" placeholder="Ref. Nº" class="btn form_btn1">
+                    <select name="TipoDePropiedad" id="" class="btn form_btn2">
+                        <option value="" hidden selected>Tipo de Propiedad</option>
+                        <option value="Departamento">Departamento</option>
+                        <option value="Casa">Casa</option>
+                        <option value="PH">PH / Ático</option>
+                        <option value="Terreno">Terreno</option>
+                        <option value="Comercial">Local Comercial</option>
+                        <option value="Oficina">Oficina</option>
+                        <option value="Garage">Garage</option>
+                        <option value="Galpon">Galpón / Bodega</option>
+                        <option value="Trastero">Depósito / Trastero</option>
+                        <option value="Edificio">Edificio</option>
+                    </select>
+                    <select name="Habitaciones" id="" class="btn form_btn3">
+                        <option value="" hidden selected>Ambientes</option>
+                        <option value="">1 ambiente o monoambiente</option>
+                        <option value="">2 ambientes</option>
+                        <option value="">3 ambientes</option>
+                        <option value="">4 ambientes</option>
+                        <option value="">5+ ambientes</option>
+                    </select>
+                    <input type="text" placeholder="Ubicación" class="btn form_btn4">
+                </div>
+
+                <div class="div_btn5">
+                    <button type="submit" class="search_btn form_btn5">Buscar</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    <!-- End MAIN CONTAINER -->
+
+
+    <!-- Open PROPIEDADES DESTACADAS -->
+    <div class="section2">
+        <h2>Propiedades Destacadas</h2>
+        <section class="propiedades_destacadas">
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado1"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Excelente ubicación</h3>
+                    <p>Departamento de última generación en lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nam, velit saepe.</p>
+                </div>
+            </article>
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado2"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Casa de pueblo</h3>
+                    <p>Excepcional casa de pueblo que se está construyendo en lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Nam, velit saepe.</p>
+                </div>
+            </article>
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado3"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Casa de lujo</h3>
+                    <p>Increíble casa de lujo con licencia de alquiler vacacional lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Nam, velit saepe.</p>
+                </div>
+            </article>
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado4"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Departamento de lujo</h3>
+                    <p>Departamento de última generación en lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nam, velit saepe.</p>
+                </div>
+            </article>
+        </section>
+        <div class="div_buttonContainer">
+            <button class="btn search_btn" id="vermas_button"><a href="html/propiedades2.html">Ver más</a></button>
+        </div>
+    </div>
+    <!-- End PROPIEDADES DESTACADAS -->
+
+    <!-- Open COMUNICACIÓN PROMO -->
+    <section class="comunication_container">
+        <h2>¿Queres <strong><a href="html/vender3.html" class="vender">vender</a></strong> tu propiedad?</h2>
+        <p>Un equipo profesional le asesorará en cualquier momento sobre la venta de su propiedad, la empresa
+            inmobiliaria líder en el mercado.</p>
+        <a href="html/contacto5.html" id="hablamos">¿Hablamos?</a>
+    </section>
+    <!-- End COMUNICACIÓN PROMO -->
+
+    <!-- Open CAROUSEL -->
+    <section class="carousel">
+        <input type="radio" name="slides" id="slide-1" checked>
+        <input type="radio" name="slides" id="slide-2">
+        <input type="radio" name="slides" id="slide-3">
+        <input type="radio" name="slides" id="slide-4">
+        <ul class="slides">
+            <li class="slide">
+                <blockquote>Sara y yo encontramos una casa muy acogedora en el centro.
+                    ¡B Propiedades ha hecho realidad nuestro sueño y estamos muy agradecidos por ello!</blockquote>
+                <h3 class="text-first-color">MIGUEL</h3>
+                <h6>Cliente</h6>
+            </li>
+            <li class="slide">
+                <blockquote>¡El mejor servicio centrado al cliente de la ciudad!
+                    ¡Nos hemos mudado a Corrientes y estamos disfrutando de nuestra nueva vida bajo el sol!</blockquote>
+                <h3 class="text-first-color">CAROLINA L.</h3>
+                <h6>Cliente</h6>
+            </li>
+            <li class="slide">
+                <blockquote>Querido, José. Dejo una nota rápida para agradecer toda tu ayuda para que la compra de
+                    nuestro departamento sea tan fácil. Realmente un excelente servicio, incluido el asesoramiento de calidad.
+                    Los mejores deseos.</blockquote>
+                <h3 class="text-first-color">PEDRO Y CATALINA MINZONI</h3>
+                <h6>Cliente</h6>
+            </li>
+            <li class="slide">
+                <blockquote>Coming from the UK I normally have a healthy disdain for estate agents. I have to say that B
+                    Propiedades and Cecile in particular did a very professional job. Moreover, the after sales service
+                    has been very helpful and they have gone well beyond the call of duty. I contacted several agents
+                    and B Prop by far had the best range. Well done to all there.</blockquote>
+                <h3 class="text-first-color">GREG P.</h3>
+                <h6>Cliente</h6>
+            </li>
+        </ul>
+        <aside class="slides-nav">
+            <label for="slide-1" id="dot-1"></label>
+            <label for="slide-2" id="dot-2"></label>
+            <label for="slide-3" id="dot-3"></label>
+            <label for="slide-4" id="dot-4"></label>
+        </aside>
+    </section>
+    <!-- End CAROUSEL -->
+
+
+    <!-- Open FOOTER -->
+    <footer class="ftr" id="ftr">
+
+        <!-- Open ICONO BACK TO TOP -->
+        <a href="#top" class="backtotop_icon">
+            <img src="img/icons/icon_backtotop.png" alt="backtotop_icon" class="backtotop_icon--img">
+        </a>
+        <!-- End ICONO BACK TO TOP -->
+
+        <section class="ftr_section1">
+            <div class="social_container">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/icon_insta_white.svg"
+                        alt="instagram_icon"></a>
+                <a href="https://www.facebook.com/"><img src="img/icons/icon_face_white.svg" alt="facebook_icon"></a>
+                <a href="html/contacto5.html"><img src="img/icons/icon_message_white.png" alt="letter_icon"
+                        class="last_icon"></a>
+            </div>
+
+            <div class="bprop_container">
+                <a href="index.html">B Propiedades</a>
+            </div>
+        </section>
+
+        <section class="ftr_section2">
+            <div class="contact_containers" id="div_mail">
+                <a href="mailto:bpropiedades@gmail.com">
+                    <img src="img/icons/icon_letter_white.svg" alt="mail_icon">@bpropiedades
+                </a>
+            </div>
+
+            <div class="contact_containers" id="div_phone">
+                <a href="tel:+543794032677">
+                    <img src="img/icons/icon_phone_white.png" alt="phone_icon">379 4 032 677
+                </a>
+            </div>
+
+            <div class="contact_containers" id="div_location">
+                <a href="https://www.google.com/maps/place/Hip%C3%B3lito+Yrigoyen+1050,+W3400ASW+Corrientes/@-27.4687414,-58.8375523,17z/data=!3m1!4b1!4m5!3m4!1s0x94456ca37f4c10b3:0x3968228fdc29516a!8m2!3d-27.4687414!4d-58.8375523"
+                    target="_blank">
+                    <img src="img/icons/icon_location_white.png" alt="location_icon">Ver oficina en Google Maps
+                </a>
+            </div>
+        </section>
+
+        <section class="ftr_section3" id="copyright">
+            <p class="copyright">Copyright © 2022 Real Estate. Designed by Ana the Martian</p>
+        </section>
+
+    </footer>
+    <!-- End FOOTER -->
+
+</body>
+
+</html>
