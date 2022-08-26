@@ -602,7 +602,7 @@ main#html4 {
       main#html4 div.equipo section.team section.members {
         border-radius: 8px 0px 8px 0px;
         border: #232b2b solid 1px;
-        margin: 0rem 1rem;
+        margin: 1rem;
         /* TRANSITION (to hover transformation) */
         transition: all 1s; }
         main#html4 div.equipo section.team section.members:hover {
