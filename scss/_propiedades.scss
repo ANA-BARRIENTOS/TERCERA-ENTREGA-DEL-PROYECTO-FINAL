@@ -31,4 +31,34 @@ main.mainContainer_propiedades--HTML {
             }
         }
     }
+    section.property_cards--container {
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        article.property_card {
+            width: 350px;
+            background-color: #fff;
+            border: 1px solid #d4d4d4;
+            margin: 1rem;
+            div.property_img {
+                background-position: center;
+            }
+            div.property_info {
+                padding: 2rem 1rem;
+                h3 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                address {
+                    font-size: 14px;
+                }
+            }
+            div.property_amenities {
+                padding: 5px 1rem;
+                border-top: 1px solid #d4d4d4;
+            }
+        }
+    }
 }

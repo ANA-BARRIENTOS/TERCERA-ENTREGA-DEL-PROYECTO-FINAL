@@ -86,6 +86,29 @@ main.mainContainer_propiedades--HTML {
       align-self: center; }
       main.mainContainer_propiedades--HTML div.listing-header ul.list-inline li {
         margin-right: 0.5rem; }
+  main.mainContainer_propiedades--HTML section.property_cards--container {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    main.mainContainer_propiedades--HTML section.property_cards--container article.property_card {
+      width: 350px;
+      background-color: #fff;
+      border: 1px solid #d4d4d4;
+      margin: 1rem; }
+      main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_img {
+        background-position: center; }
+      main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info {
+        padding: 2rem 1rem; }
+        main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info h3 {
+          font-weight: 400;
+          font-size: 18px;
+          margin-bottom: 10px; }
+        main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info address {
+          font-size: 14px; }
+      main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_amenities {
+        padding: 5px 1rem;
+        border-top: 1px solid #d4d4d4; }
 
 * {
   padding: 0;
