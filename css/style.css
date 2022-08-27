@@ -57,6 +57,36 @@
   .form_btn2 {
     margin-top: 10px; } }
 
+main.mainContainer_propiedades--HTML {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center; }
+  main.mainContainer_propiedades--HTML h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 1170px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; }
+  main.mainContainer_propiedades--HTML div.listing-header {
+    width: 1170px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 2.5rem;
+    padding: 1rem; }
+    main.mainContainer_propiedades--HTML div.listing-header ul.list-inline {
+      display: flex;
+      flex-direction: row;
+      align-self: center; }
+      main.mainContainer_propiedades--HTML div.listing-header ul.list-inline li {
+        margin-right: 0.5rem; }
+
 * {
   padding: 0;
   margin: 0;
