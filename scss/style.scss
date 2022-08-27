@@ -700,6 +700,7 @@ main.propiedades_main {
 /* Open VENDER */
 /* ++++++++++ */
 section.vender_grid--container {
+    max-width: 1300px;
     margin: 3rem auto;
     width: 90%;
     display: grid;
@@ -753,6 +754,7 @@ section.vender_grid--container {
 /* ++++++++++++ */
 main#html4 {
     .about__sectionContainer {
+        max-width: 1300px;
         background-color: white;
         // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         width: 90%;
