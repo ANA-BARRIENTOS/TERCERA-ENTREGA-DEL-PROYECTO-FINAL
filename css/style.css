@@ -257,7 +257,9 @@ main.mainContainer_propiedades--HTML {
       main.mainContainer_propiedades--HTML div.listing-header ul.list-sort div.div-order {
         margin-bottom: 10px; }
         main.mainContainer_propiedades--HTML div.listing-header ul.list-sort div.div-order li select#order_status {
-          margin-right: 0rem; } }
+          margin-right: 0rem; }
+  p {
+    font-size: 1px; } }
 
 main.form_container {
   box-sizing: border-box;
