@@ -57,6 +57,9 @@
   .form_btn2 {
     margin-top: 10px; } }
 
+button {
+  background-color: #fff; }
+
 main.mainContainer_propiedades--HTML {
   max-width: 1170px;
   display: flex;
