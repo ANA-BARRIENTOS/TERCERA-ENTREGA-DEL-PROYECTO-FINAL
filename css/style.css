@@ -115,16 +115,29 @@ main.mainContainer_propiedades--HTML {
       width: 350px;
       background-color: #fff;
       border: 1px solid #d4d4d4;
-      margin: 1rem; }
+      margin: 1rem;
+      cursor: pointer;
+      transition: opacity 0.35s, transform 0.35s;
+      transition: box-shadow 0.35s ease; }
+      main.mainContainer_propiedades--HTML section.property_cards--container article.property_card:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
+      main.mainContainer_propiedades--HTML section.property_cards--container article.property_card:hover div.property_img img {
+        transform: translate(5px, 0px);
+        opacity: 0.7; }
       main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_img {
         width: 350px;
         height: 250px;
-        background-color: #c20114;
-        overflow: hidden; }
+        background-color: #3d3d3d;
+        overflow: hidden;
+        position: relative; }
         main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_img img {
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
           display: block;
-          max-width: 110%;
-          height: auto; }
+          width: 105%;
+          height: auto;
+          transition: opacity 0.35s, transform 0.35s; }
       main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info {
         padding: 2rem 1.25rem; }
         main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info h3 {
