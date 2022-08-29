@@ -288,7 +288,11 @@ main.mainContainer_propiedades--HTML {
     justify-items: stretch; }
   .contact--HTML .contact_form .div-2 {
     display: grid;
-    justify-content: stretch; } }
+    justify-content: stretch; }
+  .contact--HTML .contact_form .div-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px; } }
 
 * {
   padding: 0;
