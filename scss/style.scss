@@ -349,87 +349,64 @@ section.home_heroImage {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    /* GRID */
+    /* FLEXBOX */
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
     .fieldset {
-        align-self: center;
         background-color: #ffffffcc;
-        height: auto;
-        width: auto;
         padding: 1.5rem;
-        margin: 1.5rem;
+        margin: 1rem;
         border: none;
         border-radius: 1rem 0rem 1rem 0rem;
         box-shadow: 0px 1px 5px 0px #3333331a;
-
         form {
             width: auto;
             height: auto;
             display: flex;
             flex-direction: column;
-
             div.radio-buttons {
-                margin-bottom: 10px;
+                margin-bottom: 1rem;
                 display: flex;
-
                 input[type="radio"] {
                     display: none;
                 }
-
                 label {
-                    background-color: #DDDDDD;
+                    background-color: #fff;
                     font-weight: 500;
                     text-transform: uppercase;
                     cursor: pointer;
+                    &:hover {
+                        background-color: #DDDDDD;
+                    }
                 }
-
-                input[type="radio"]:checked+label {
-                    background-color: #000000;
-                    color: #ffffff;
+                input[type="radio"]:checked + label {
+                    background-color: #1f1f1f;
+                    color: #fff;
+                    font-weight: 600;
                     box-shadow: 0 0 0 0.2rem #46464780;
                     z-index: 10;
-                    font-weight: 700;
                 }
-
                 label#radio1 {
-                    border-top-right-radius: 0px;
-                    border-bottom-right-radius: 0px;
-                    /* FLEXBOX */
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    border-radius: 0.25em 0px 0px 0.25em;
                 }
-
                 label#radio2 {
-                    border-top-left-radius: 0px;
-                    border-bottom-left-radius: 0px;
-                    /* FLEXBOX */
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    border-radius: 0px 0.25em 0.25em 0px;
                 }
             }
-
-            div.buttons_container {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                justify-items: center;
+            div.middle-buttons {
+                display: grid;
+                align-items: stretch;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: 8px;
             }
-
             div.div_btn5 {
-                display: flex;
-                justify-self: center;
-                width: 190px;
+                margin-top: 1rem;
             }
         }
     }
 }
-
 // +++ End PRIMERA SECCIÓN Index -> Background Image -> Search Form ++>
 
 

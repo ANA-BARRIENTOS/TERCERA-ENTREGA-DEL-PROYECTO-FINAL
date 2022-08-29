@@ -22,65 +22,27 @@
 }
 // End BACK-TO-TOP Icon
 
+
+
+// BUTTONS Default Style
 .btn {
-    border-radius: 0.25em;
+    border-radius: 0.25em 0px 0.25em 0px;
     font-size: 16px;
-    padding: 0.8rem;
+    color: #707070;
+    // padding: 0.8rem;
+    padding: 10px 1.5rem;
     border: none;
-    width: 190px;
 }
 
 .search_btn {
     @extend .btn;
-    background-color: red;
+    background-color: #c20114;
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
     margin-right: 0px;
     cursor: pointer;
-    a {
-        color: #fff;
+    &:hover {
+        background-color: #731010;
     }
-}
-
-
-// BUTTONS INDEX ++++++++++
-#radio1, #radio2 {
-    width: 95px;
-    margin: 0px;
-}
-
-.form_btn2, .form_btn3 {
-    background-color: #fff;
-    width: 215.6px;
-}
-
-.form_btn1, .form_btn2, .form_btn3 {
-    margin-right: 10px;
-}
-
-.form_btn5 {
-    margin-top: 10px;
-}
-
-@media screen and (max-width: 998px) {
-    .form_btn4 {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 772px) {
-    .form_btn3 {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 574px) {
-    .form_btn2 {
-        margin-top: 10px;
-    }
-}
-
-button {
-    background-color: #fff;
 }

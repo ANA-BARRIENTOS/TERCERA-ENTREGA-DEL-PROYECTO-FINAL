@@ -64,18 +64,16 @@
             <!-- <legend>Buscar Propiedades</legend> -->
             <form action="/formulario" method="POST">
                 <div class="radio-buttons">
-                    <input type="radio" name="rentorbuy" id="RENT">
+                    <input type="radio" name="rentorbuy" id="RENT" checked>
                     <label for="RENT" id="radio1" class="btn">Alquilar</label>
-
                     <input type="radio" name="rentorbuy" id="BUY">
                     <label for="BUY" id="radio2" class="btn">Comprar</label>
                 </div>
-
-                <div class="buttons_container">
+                <div class="middle-buttons">
                     <input type="text" placeholder="Ref. Nº" class="btn form_btn1">
                     <select name="TipoDePropiedad" id="" class="btn form_btn2">
-                        <option value="" hidden selected>Tipo de Propiedad</option>
-                        <option value="Departamento">Departamento</option>
+                        <option value="" class="btn" hidden selected>Tipo de Propiedad</option>
+                        <option value="Departamento" class="btn">Departamento</option>
                         <option value="Casa">Casa</option>
                         <option value="PH">PH / Ático</option>
                         <option value="Terreno">Terreno</option>
@@ -96,7 +94,6 @@
                     </select>
                     <input type="text" placeholder="Ubicación" class="btn form_btn4">
                 </div>
-
                 <div class="div_btn5">
                     <button type="submit" class="search_btn form_btn5">Buscar</button>
                 </div>
