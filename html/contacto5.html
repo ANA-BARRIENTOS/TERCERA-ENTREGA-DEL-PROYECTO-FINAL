@@ -48,20 +48,21 @@
     <!-- End NAV BAR -->
 
     <!-- Open FORMULARIO DE CONTACTO -->
-    <main class="form_container">
+    <main class="contact--HTML">
         <form action="" method="" enctype="" class="contact_form">
-
-            <input type="text" name="name" id="name" placeholder="Nombre*" class="btn" required>
-    
-            <input type="text" name="lastname" id="lastname" placeholder="Apellido*" class="btn" required>
-    
-            <input type="email" name="email" id="mail" placeholder="E-Mail*" class="btn" required>
-    
-            <input type="number" name="phone" id="phone" placeholder="Teléfono" class="btn">
-        
-            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
-            
-            <input type="submit" value="Enviar" class="search_btn">
+            <div class="div-1">
+                <input type="text" name="name" id="name" placeholder="Nombre*" class="btn" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Apellido*" class="btn" required>
+                <input type="email" name="email" id="mail" placeholder="E-Mail*" class="btn" required>
+                <input type="number" name="phone" id="phone" placeholder="Teléfono" class="btn">
+            </div>
+            <div class="div-2">
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+            </div>
+            <div class="div-3">
+                <button type="reset" value="Limpiar" class="btn reset_btn">Limpiar</button>
+                <input type="submit" value="Enviar" class="search_btn">
+            </div>
         </form>
     </main>
     <!-- End FORMULARIO DE CONTACTO -->

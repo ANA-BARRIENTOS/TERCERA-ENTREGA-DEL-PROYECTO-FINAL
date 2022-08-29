@@ -1,39 +1,58 @@
-// +++++++++++>
+// ++++++>
 // Open CONTACT
-// ++++++++++++
-main.form_container {
-    box-sizing: border-box;
-    margin: 20px 1rem;
-    height: 80vh;
+// ++++++>
+.contact--HTML {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    form.contact_form {
+        flex-direction: row;
+        justify-content: center;
+    .contact_form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: #d4d4d4;
-        padding: 2rem;
-        border-radius: 8px 0px 8px 0px;
-        input {
-            margin: 0.5rem 0rem;
+        padding: 1rem;
+        margin: 3rem 1rem;
+        max-width: 1200px;
+        border-radius: 0.5em 0px 0.5em 0px;
+        .div-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 8px;
+            justify-items: center;
+            align-items: center;
+            margin-bottom: 10px;
         }
-
-        textarea {
-            margin: 0.5rem 0rem;
-            width: 25vw;
-            min-width: 270px;
-            height: 300px;
-            resize: none;
-            padding: 1rem;
-            border-radius: 8px 0px 8px 0px;
-            border: none;
+        .div-2 {
+            display: grid;
+            justify-content: stretch;
+            height: 250px;
+            margin-bottom: 10px;
+            textarea {
+                padding: 1rem;
+                border-radius: 0.25em 0px 0.25em 0px;
+                resize: none;
+                border: none;
+            }
         }
     }
 }
 
-// +++++++++++
+// Media Queries
+@media screen and (max-width: 525px) {
+    .contact--HTML {
+        .contact_form {
+            .div-1 {
+                grid-template-columns: 1fr;
+                justify-items: stretch;
+            }
+            .div-2 {
+                display: grid;
+                justify-content: stretch;
+            }
+        }
+    }
+}
+
+// ++++++>
 // End CONTACT
-// +++++++++++
+// ++++++>

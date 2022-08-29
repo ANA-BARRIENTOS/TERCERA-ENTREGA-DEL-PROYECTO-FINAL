@@ -1,4 +1,6 @@
-// Open BACK-TO-TOP Icon
+// +++++++++++++++>
+// Open BACK-TO-TOP ICON
+// +++++++++++++++>
 .backtotop_icon {
     position: absolute;
     bottom: 10px;
@@ -20,18 +22,24 @@
         }
     }
 }
-// End BACK-TO-TOP Icon
+// +++++++++++++++>
+// End BACK-TO-TOP ICON
+// +++++++++++++++>
 
 
-
-// BUTTONS Default Style
+// ++++++++++++++++++++>
+// Open BUTTONS Default Style
+// ++++++++++++++++++++>
 .btn {
     border-radius: 0.25em 0px 0.25em 0px;
     font-size: 16px;
     color: #707070;
-    // padding: 0.8rem;
     padding: 10px 1.5rem;
     border: none;
+    background-color: #fff;
+    option {
+        color: #707070;
+    }
 }
 
 .search_btn {
@@ -42,7 +50,36 @@
     color: #fff;
     margin-right: 0px;
     cursor: pointer;
+    transition: all 0.30s ease;
     &:hover {
         background-color: #731010;
     }
 }
+
+.reset_btn {
+    background-color: #232b2b;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.30s ease;
+    &:hover {
+        background-color: #fff;
+        color: #707070;
+        border: #707070 1px solid inset;
+    }
+}
+
+// ++++++++++++++++++++>
+// End BUTTONS Default Style
+// ++++++++++++++++++++>
+
+
+
+// ++++++++++++++++++++++++>
+// Open INDEX FORM MIDDLE BUTTONS
+// ++++++++++++++++++++++++>
+
+// ++++++++++++++++++++++++>
+// Open INDEX FORM MIDDLE BUTTONS
+// ++++++++++++++++++++++++>

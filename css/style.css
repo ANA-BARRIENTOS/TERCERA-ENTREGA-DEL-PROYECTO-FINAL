@@ -19,7 +19,10 @@
   font-size: 16px;
   color: #707070;
   padding: 10px 1.5rem;
-  border: none; }
+  border: none;
+  background-color: #fff; }
+  .btn option, .search_btn option {
+    color: #707070; }
 
 .search_btn {
   background-color: #c20114;
@@ -27,9 +30,22 @@
   font-weight: 600;
   color: #fff;
   margin-right: 0px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.30s ease; }
   .search_btn:hover {
     background-color: #731010; }
+
+.reset_btn {
+  background-color: #232b2b;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.30s ease; }
+  .reset_btn:hover {
+    background-color: #fff;
+    color: #707070;
+    border: #707070 1px solid inset; }
 
 main.mainContainer_propiedades--HTML {
   max-width: 1170px;
@@ -125,6 +141,8 @@ main.mainContainer_propiedades--HTML {
           font-weight: 400;
           font-size: 18px;
           margin-bottom: 8px; }
+          main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info h3:hover {
+            color: #c20114; }
         main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_info address {
           font-size: 14px; }
       main.mainContainer_propiedades--HTML section.property_cards--container article.property_card div.property_amenities {
@@ -233,32 +251,44 @@ main.mainContainer_propiedades--HTML {
         main.mainContainer_propiedades--HTML div.listing-header ul.list-sort div.div-order li select#order_status {
           margin-right: 0rem; } }
 
-main.form_container {
-  box-sizing: border-box;
-  margin: 20px 1rem;
-  height: 80vh;
+.contact--HTML {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  main.form_container form.contact_form {
+  flex-direction: row;
+  justify-content: center; }
+  .contact--HTML .contact_form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #d4d4d4;
-    padding: 2rem;
-    border-radius: 8px 0px 8px 0px; }
-    main.form_container form.contact_form input {
-      margin: 0.5rem 0rem; }
-    main.form_container form.contact_form textarea {
-      margin: 0.5rem 0rem;
-      width: 25vw;
-      min-width: 270px;
-      height: 300px;
-      resize: none;
-      padding: 1rem;
-      border-radius: 8px 0px 8px 0px;
-      border: none; }
+    padding: 1rem;
+    margin: 3rem 1rem;
+    max-width: 1200px;
+    border-radius: 0.5em 0px 0.5em 0px; }
+    .contact--HTML .contact_form .div-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 8px;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 10px; }
+    .contact--HTML .contact_form .div-2 {
+      display: grid;
+      justify-content: stretch;
+      height: 250px;
+      margin-bottom: 10px; }
+      .contact--HTML .contact_form .div-2 textarea {
+        padding: 1rem;
+        border-radius: 0.25em 0px 0.25em 0px;
+        resize: none;
+        border: none; }
+
+@media screen and (max-width: 525px) {
+  .contact--HTML .contact_form .div-1 {
+    grid-template-columns: 1fr;
+    justify-items: stretch; }
+  .contact--HTML .contact_form .div-2 {
+    display: grid;
+    justify-content: stretch; } }
 
 * {
   padding: 0;
@@ -312,17 +342,17 @@ header {
         .navegacion nav.nav ul li a:hover {
           color: #fff !important; }
       .navegacion nav.nav ul li #inicio_html {
-        color: crimson; }
+        color: #c20114; }
       .navegacion nav.nav ul li #propiedades_html {
-        color: crimson; }
+        color: #c20114; }
       .navegacion nav.nav ul li #vender_html {
-        color: crimson; }
+        color: #c20114; }
       .navegacion nav.nav ul li #nosotros_html {
-        color: crimson; }
+        color: #c20114; }
       .navegacion nav.nav ul li #contacto_html {
-        color: crimson; }
+        color: #c20114; }
 
-@media screen and (max-width: 718px) {
+@media screen and (max-width: 732px) {
   .navegacion {
     height: 3rem;
     justify-content: flex-end;
@@ -505,17 +535,19 @@ section.home_heroImage {
           border-radius: 0px 0.25em 0.25em 0px; }
       section.home_heroImage .fieldset form div.middle-buttons {
         display: grid;
-        align-items: stretch;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: stretch;
+        align-items: center;
+        grid-template-columns: 1fr;
         gap: 8px; }
       section.home_heroImage .fieldset form div.div_btn5 {
         margin-top: 1rem; }
 
 div.section2 {
-  padding: 2rem 0rem; }
+  padding: 3rem 0rem; }
   div.section2 h2 {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 2rem; }
   div.section2 section.propiedades_destacadas {
     display: flex;
     flex-direction: row;
@@ -526,6 +558,7 @@ div.section2 {
       width: 250px;
       height: auto;
       margin: 20px 20px;
+      cursor: pointer;
       /* TRANSITION (to hover transformation) */
       transition: all 2s; }
       div.section2 section.propiedades_destacadas article.propiedad_container:hover {

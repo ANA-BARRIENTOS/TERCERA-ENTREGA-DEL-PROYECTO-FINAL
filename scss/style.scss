@@ -89,23 +89,23 @@ header {
                 }
 
                 #inicio_html {
-                    color: crimson;
+                    color: #c20114;
                 }
 
                 #propiedades_html {
-                    color: crimson;
+                    color: #c20114;
                 }
 
                 #vender_html {
-                    color: crimson;
+                    color: #c20114;
                 }
 
                 #nosotros_html {
-                    color: crimson;
+                    color: #c20114;
                 }
 
                 #contacto_html {
-                    color: crimson;
+                    color: #c20114;
                 }
             }
         }
@@ -113,7 +113,7 @@ header {
 }
 
 // +++ Open Media Queries +++
-@media screen and (max-width: 718px) {
+@media screen and (max-width: 732px) {
     .navegacion {
         height: 3rem;
         justify-content: flex-end;
@@ -162,7 +162,6 @@ header {
         }
     }
 }
-
 // +++ End Media Queries +++
 // +++++++++++
 // End NAV BAR
@@ -329,7 +328,6 @@ header {
         }
     }
 }
-
 // +++ End Media Queries +++
 // ++++++++++
 // End FOOTER
@@ -397,8 +395,9 @@ section.home_heroImage {
             }
             div.middle-buttons {
                 display: grid;
-                align-items: stretch;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
+                justify-items: stretch;
+                align-items: center;
+                grid-template-columns: 1fr;
                 gap: 8px;
             }
             div.div_btn5 {
@@ -412,11 +411,12 @@ section.home_heroImage {
 
 // +++ Open SEGUNDA SECCIÓN -> PROPIEDADES DESTACADAS ++>
 div.section2 {
-    padding: 2rem 0rem;
+    padding: 3rem 0rem;
 
     h2 {
         text-align: center;
         text-transform: uppercase;
+        font-size: 2rem;
     }
 
     section.propiedades_destacadas {
@@ -430,19 +430,17 @@ div.section2 {
             width: 250px;
             height: auto;
             margin: 20px 20px;
+            cursor: pointer;
             /* TRANSITION (to hover transformation) */
             transition: all 2s;
-
             &:hover {
                 transform: scale(1.1);
             }
-
             figure.cuadrados {
                 width: 250px;
                 height: 200px;
                 margin-bottom: 10px;
             }
-
             @mixin cuadrado1234 ($imagen_fondo , $color_fondo) {
                 background-image: $imagen_fondo;
                 background-color: $color_fondo;
@@ -450,19 +448,15 @@ div.section2 {
                 background-size: cover;
                 background-repeat: no-repeat; 
             }
-
             figure#cuadrado1 {
                 @include cuadrado1234 (url(../img/propiedad1.jpg) , #d4d4d4)
             }
-
             figure#cuadrado2 {
                 @include cuadrado1234 (url(../img/propiedad2.jpg) , #d4d4d4)
             }
-
             figure#cuadrado3 {
                 @include cuadrado1234 (url(../img/propiedad3.jpg) , #d4d4d4)
             }
-
             figure#cuadrado4 {
                 @include cuadrado1234 (url(../img/propiedad4.jpg) , #d4d4d4)
             }
